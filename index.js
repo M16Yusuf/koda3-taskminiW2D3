@@ -52,11 +52,14 @@ tasksIrul();
 const { myTriangle } = require("./tasks/yusuf/triangle.js");
 const { useCountArray } = require("./tasks/yusuf/countArray.js");
 const { myTriangleVer2 } = require("./tasks/yusuf/triangleVer2.js");
+const { prosesNumbers } = require("./tasks/yusuf/prosesNumber.js");
 // panggil nomor 1 
 console.log(myTriangle(5));
 // panggil nomor 2 dan asign nilai
 console.log(useCountArray([1,4,5,6,4,6])); // hasil = 2880
 // panggil nomor 3 
 console.log(myTriangleVer2(5));
+// panggil nomor 4
+console.log(prosesNumbers([1,2,3,4,5])); // hasil 15
 
 
