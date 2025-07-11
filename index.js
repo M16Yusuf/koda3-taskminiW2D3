@@ -50,6 +50,10 @@ tasksIrul();
 
 // import your tasks here
 const { myTriangle } = require("./tasks/yusuf/triangle.js");
+const { useCountArray } = require("./tasks/yusuf/countArray.js");
 // panggil nomor 1 
 console.log(myTriangle(5));
+// panggil nomor 2 dan asign nilai
+console.log(useCountArray([1,4,5,6,4,6])); // hasil = 2880
+
 
