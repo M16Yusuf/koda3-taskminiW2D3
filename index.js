@@ -45,7 +45,11 @@ function tasksIrul(){
 tasksIrul();
 
 /**
- * Task "Person Name"
+ * Task "Muhammad Yusuf"
  */
 
 // import your tasks here
+const { myTriangle } = require("./tasks/yusuf/triangle.js");
+// panggil nomor 1 
+console.log(myTriangle(5));
+
