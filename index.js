@@ -67,3 +67,27 @@ console.log(prosesNumbers([1,2,3,4,5])); // hasil 15
 console.log(cetakTabel(5));
 // panggil nomor 6
 console.log(buatRentang(1, 5));
+
+// task nomor 7 
+/**
+ * a. uncaught referenceError: user is not defined. 
+ *    variable user tidak terdefinisi, mungkin karena 
+ *    belum di deklarasikan variabelnya atau mungkin karena 
+ *    memanggil variable tersebut diluar scoop.
+ * 
+ * b. TypeError: cannot read properties of null (reading 'length'),
+ *    error karena ingin mengakses variabel array yang masih kosong.
+ * 
+ * c. syntaxError : unexpected token ')', 
+ *    error penulisan program karena kelebihan tanda ")" yang 
+ *    membuat struktur program jadi berubah.
+ * 
+ * d. Typeerror : cannot set properties of undfined (setting 'status'), 
+ *    error  ketekia mencoba memasukan nilai "status" ke dalam object 
+ *    dengan key 'setting' yang tidak terdefinisi.
+ * 
+ * e. RangeError: Maximum call stack size exceeded, 
+ *    error Ketika fungsi recursive (fungsi yang memanggil 
+ *    dirinya sendiri), terus looping tanpa kondisi stop hingga 
+ *    program tidak ada memory untuk memproses perulangan tersebut
+ */
