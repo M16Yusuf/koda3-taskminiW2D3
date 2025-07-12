@@ -7,7 +7,8 @@
 const cetakTabel = function(inputAngka){
     let hasil = ""; 
     if(typeof inputAngka != "number" || inputAngka < 0){
-        return "parameter harus bertipedata nomor dan harus nomor positif";
+        const err = new Error("parameter harus bertipedata nomor dan harus nomor positif");
+        throw err;
     } else {
         for(let i =1; i<=10; i++){ 
             let temp = 0;

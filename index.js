@@ -49,24 +49,63 @@ tasksIrul();
  */
 
 // import your tasks here
-const { myTriangle } = require("./tasks/yusuf/triangle.js");
-const { useCountArray } = require("./tasks/yusuf/countArray.js");
-const { myTriangleVer2 } = require("./tasks/yusuf/triangleVer2.js");
-const { prosesNumbers } = require("./tasks/yusuf/prosesNumber.js");
-const { cetakTabel } =require("./tasks/yusuf/cetakTabel.js");
-const { buatRentang } = require("./tasks/yusuf/buatRentang.js");
-// panggil nomor 1 
-console.log(myTriangle(5));
-// panggil nomor 2 dan asign nilai
-console.log(useCountArray([1,4,5,6,4,6])); // hasil = 2880
-// panggil nomor 3 
-console.log(myTriangleVer2(5));
-// panggil nomor 4
-console.log(prosesNumbers([1,2,3,4,5])); // hasil 15
-// panggil nomor 5
-console.log(cetakTabel(5));
-// panggil nomor 6
-console.log(buatRentang(1, 5));
+const yusuf = require("./tasks/yusuf");
+
+
+function taskyusuf(){
+    // pangggil tugas nomor 1
+    // test error
+    try {
+        const res = yusuf.myTriangle("ABC");
+        console.log(res);
+    } catch (error) {
+        console.log(error.message);
+    }
+    // test benar
+    console.log(yusuf.myTriangle(5));
+    
+    
+    // panggil tugas nomor 2
+    // panggil nomor 2 dan asign nilai
+    console.log(yusuf.useCountArray([1,4,5,6,4,6])); // hasil = 2880
+
+    
+    // panggil tugas nomor 3
+    // test error 
+    try{
+        const result = yusuf.myTriangleVer2("abc");
+        console.log(result);
+    } catch (error){
+        console.log(error.message);
+    }
+    // test benar
+    console.log(yusuf.myTriangleVer2(5));
+
+
+    // panggil tugas nomor 4
+    // panggil nomor 4
+    console.log(yusuf.prosesNumbers([1,2,3,4,5])); // hasil 15
+
+
+    // panggil tugas nomor 5
+    // test error 
+    try{
+        const resultTab = yusuf.cetakTabel("abc");
+        console.log(resultTab);
+    }catch(err){
+        console.log(err.message);
+    }
+    // test suksess
+    console.log(yusuf.cetakTabel(5));
+
+
+    // panggil tugas nomor 6
+    // panggil nomor 6
+    console.log(yusuf.buatRentang(1, 5));
+
+}
+taskyusuf();
+
 
 // task nomor 7 
 /**

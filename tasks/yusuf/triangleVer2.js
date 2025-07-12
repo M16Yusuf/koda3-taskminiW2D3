@@ -26,7 +26,7 @@
 
 const myTriangleVer2 = function (inputMasukan){
     if(typeof inputMasukan != "number" || inputMasukan < 0){
-        return "parameter harus bertipedata nomor dan harus nomor positif";
+        throw new Error("parameter harus bertipedata nomor dan harus nomor positif");
     } else {
         for(let i = 0; i<inputMasukan; i++){
             let hasil = "";

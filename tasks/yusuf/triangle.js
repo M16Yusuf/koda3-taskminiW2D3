@@ -7,9 +7,8 @@
 
 // function membuat segitiga
 const myTriangle = function(inputan){
-    const msgVal = "parameter harus bertipe data nomor, dan nomor harus positif";
     // validari inputan harus number
-    if(typeof inputan == "number"){
+    if(typeof inputan == "number" || inputan > 0){
         // validasi inputan harus positif
         if (inputan < 0 ) {
             return msgVal;
@@ -25,7 +24,7 @@ const myTriangle = function(inputan){
         }
         return hasil;
     } else {
-        return "parameter inputan harus bertipe data nomor";
+        throw new Error("parameter harus bertipe data nomor, dan nomor harus positif");
     }
 };
 
